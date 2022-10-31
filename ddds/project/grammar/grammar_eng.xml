@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+  
+  <action name="fix_front_bulb">
+    <one-of>
+      <item>front bulb</item>
+      <item>I want to fix the front bulb</item>
+      <item>Tell me how to fix the front bulb</item>
+      <item>How can I fix the front bulb</item>
+      <item>I want to change the front bulb</item>
+      <item>Tell me how to change the front bulb</item>
+      <item>How can I change the front bulb</item>
+      <item>I want to replace the front bulb</item>
+      <item>Tell me how to replace the front bulb</item>
+      <item>How can I replace the front bulb</item>
+      
+      <item> headlight bulb</item>
+      <item>I want to fix the headlight bulb </item>
+      <item>Tell me how to fix the headlight bulb</item>
+      <item>How can I fix the headlight bulb</item>
+      <item>I want to change the headlight bulb </item>
+      <item>Tell me how to change the headlight bulb</item>
+      <item>How can I change the headlight bulb</item>
+      <item>I want to replace the headlight bulb </item>
+      <item>Tell me how to replace the headlight bulb</item>
+      <item>How can I replace the headlight bulb</item>
+      
+      <item> car headlight bulb</item>
+      <item>I want to fix the car headlight bulb </item>
+      <item>Tell me how to fix the car headlight bulb</item>
+      <item>How can I fix the car headlight bulb</item>
+      <item>I want to change the car headlight bulb </item>
+      <item>Tell me how to change the car headlight bulb</item>
+      <item>How can I change the car headlight bulb</item>
+      <item>I want to replace the car headlight bulb </item>
+      <item>Tell me how to replace the car headlight bulb</item>
+      <item>How can I replace the car headlight bulb</item>
+    </one-of>
+  </action>
+
+  <action name="power_off1">
+    <one-of>
+      <item>power off</item>
+      <item>power off the engine </item>
+      <item>power off the car engine </item>
+    </one-of>
+  </action>
+
+  <action name="open_engine">
+    <one-of>
+      <item>open the hood</item>
+      <item>open the engine </item>
+      <item>open the compartment </item>
+    </one-of>
+  </action>
+
+  <action name="open_engine_d">
+    <one-of>
+      <item>open the hood</item>
+      <item>open the engine </item>
+      <item>open the compartment </item>
+    </one-of>
+  </action>
+
+  <action name="disconnect_wires">
+    <one-of>
+      <item>disconnect wires</item>
+      <item>disconnect three wires</item>
+    </one-of>
+  </action>
+
+  <action name="disconnect_wires_d">
+    <one-of>
+      <item>disconnect wires </item>
+      <item>disconnect three wires</item>
+    </one-of>
+  </action>
+
+  <action name="unscrew_old">
+    <one-of>
+      <item>unscrew old bulb</item>
+      <item>old bulb</item>
+    </one-of>
+  </action>
+
+  <action name="unscrew_old_d">
+    <one-of>
+      <item>unscrew old bulb</item>
+      <item>old bulb</item>
+    </one-of>
+  </action>
+
+  <action name="screw_new">
+    <one-of>
+      <item>screw new bulb</item>
+      <item>new bulb</item>
+    </one-of>
+  </action>
+
+   <action name="close_comp">
+    <one-of>
+      <item>close the hood</item>
+      <item>close compartment</item>
+    </one-of>
+  </action>
+
+  <action name="fix_back_bulb">
+    <one-of>
+      <item>tail light bulb</item>
+      <item>I want to fix the tail light bulb</item>
+      <item>Tell me how to fix the tail light bulb</item>
+      <item>How can I fix the tail light bulb</item>
+      <item>I want to change the tail light bulb</item>
+      <item>Tell me how to change the tail light bulb</item>
+      <item>How can I change the tail light bulb</item>
+      <item>I want to replace the tail light bulb</item>
+      <item>Tell me how to replace the tail light bulb</item>
+      <item>How can I replace the tail light bulb</item>
+    </one-of>
+  </action>
+
+  <action name="power_off2">
+    <one-of>
+      <item>power off</item>
+      <item>power off the engine </item>
+      <item>power off the car engine </item>
+    </one-of>
+  </action>
+
+  <action name="open_trunk">
+    <one-of>
+      <item>open the trunk</item>
+      <item>open trunk</item>
+      <item>trunk</item>
+    </one-of>
+  </action>
+
+  <action name="open_trunk_d">
+    <one-of>
+      <item>open the trunk</item>
+      <item>open trunk</item>
+      <item>trunk</item>
+    </one-of>
+  </action>
+  
+  <action name="move_fabric">
+    <one-of>
+      <item>move the fabric</item>
+      <item>move fabric</item>
+      <item>fabric</item>
+    </one-of>
+  </action>
+
+  <action name="move_fabric_d">
+    <one-of>
+      <item>move the fabric</item>
+      <item>move fabric</item>
+      <item>fabric</item>
+    </one-of>
+  </action>
+
+  <action name="pull_out">
+    <one-of>
+      <item>pull out the light</item>
+      <item>pull out the light</item>
+    </one-of>
+  </action>
+
+  <action name="pull_out_d">
+    <one-of>
+      <item>pull out the light</item>
+      <item>pull out the light</item>
+    </one-of>
+  </action>
+
+  <action name="grab_b">
+    <one-of>
+      <item>grab the socket</item>
+      <item>socket</item>
+      <item>socket of the light</item>
+    </one-of>
+  </action>
+
+  <action name="grab_b_d">
+    <one-of>
+      <item>grab the socket</item>
+      <item>socket</item>
+      <item>socket of the light</item>
+    </one-of>
+  </action>
+
+  <action name="press_down">
+    <one-of>
+      <item>press down the bulb</item>
+      <item>press down the bulb in the socket</item>
+    </one-of>
+  </action>
+
+  <action name="press_down_d">
+    <one-of>
+      <item>press down the bulb</item>
+      <item>press down the bulb in the socket</item>
+    </one-of>
+  </action>
+
+  <action name="close_trunk">
+    <one-of>
+      <item>close trunk</item>
+      <item>close the trunk</item>
+    </one-of>
+  </action>
+
+  <individual name="bulb_finished1"> Great! You can once again enjoy driving your car day or night!</individual>
+  <individual name="bulb_finished2"> Great! You can once again enjoy driving your car day or night!</individual>
+
+  <question speaker="user" predicate="clean_h" type="wh_question">
+    <one-of>
+      <item>how can I clean the headlights?</item>
+      <item>tell me how to open the headlights </item>
+      <item>can you tell me how to clean the headlights? </item>
+      <item>I want to know how to clean the headlights </item>
+    </one-of>
+  </question>
+
+  <individual name="clean">
+    <one-of>
+      <item>One of the most known techniques to clean headlights is toothpaste.First, you have to clean the headlights with a window or headlights cleaner. Then, apply a fingertip of toothpaste to a soft cloth. Toothpaste with baking soda works better than regular toothpaste. Start rubbing in circles and make sure to keep the surface wet.After removing the foggy layer, remember to apply a sealant.</item>
+    </one-of>
+  </individual>
+
+  <question speaker="user" predicate="adjust_h" type="wh_question">
+    <one-of>
+      <item>how can I adjust the headlights ?</item>
+      <item>tell me how to adjust the headlights?</item>
+      <item>can you tell me how to adjust the headlights ?</item>
+      <item>I want to know how to adjust the headlights </item>
+    </one-of>
+  </question>
+
+  <individual name="adjust">
+    <one-of>
+      <item>as you stand in the front of the car, have the assistant turn the headlights off. Next, put the dark cloth or cardboard over one headlight, and have the assistant turn the headlights on. Find the adjusting screw and turn the screws slowly clockwise to raise the height of the lights or counterclockwise to lower them</item>
+    </one-of>
+  </individual>
+
+
+  <question speaker="user" predicate="bulb_types" type="wh_question">
+    <one-of>
+      <item>how many types of headlight are there?</item>
+      <item>tell me how to many types of headlights exist</item>
+      <item> I want to know the types of the headlights</item>
+      <item> can you tell me the types of the headlights</item>
+    </one-of>
+  </question>
+
+ <individual name="types">
+    <one-of>
+      <item>There are three main types of headlights: LED, HID or xenon, and halogen.</item>
+    </one-of>
+  </individual>
+
+  <question speaker="user" predicate="best_type" type="wh_question">
+    <one-of>
+      <item> which is the best type of headlight? </item>
+      <item>tell me which is the best type of headlight</item>
+      <item>can you tell me the best type of headlight?</item>
+       <item>I want to know the best type of headlight</item>
+    </one-of>
+  </question>
+
+  <individual name="best">
+    <one-of>
+      <item>It depends on your needs. If you do a lot of night driving on country roads, HID headlights are going to be the brightest for you. If you are sticking to a budget, halogen lights are going to be the most cost effective option. LED lights may interest anyone looking to lower their emissions without sacrificing on brightness.</item>
+    </one-of>
+  </individual>
+
+  <question speaker="user" predicate="number_of_t" type="wh_question">
+    <one-of>
+      <item>how many bulbs are in the tail light?</item>
+      <item>tell me how many bulbs are in the tail light</item>
+      <item>can you tell me how many bulbs are in the tail light??</item>
+    </one-of>
+  </question>
+
+  <individual name="number">
+    <one-of>
+      <item>On many vehicles, the tail lights and brake lights share the same bulb. One filament inside the bulb is for the tail light and the other filament is for the brake light. There are also some vehicles that have a separate bulb for each circuit</item>
+    </one-of>
+  </individual>
+
+   <question speaker="user" predicate="types_of_t" type="wh_question">
+    <one-of>
+      <item>how many types of tail lights exist?</item>
+      <item>tell me how many tail lights exist.</item>
+      <item>can you tell me how many tail lights exist?</item>
+      <item>I want to know how many tail lights exist </item>
+    </one-of>
+  </question>
+
+  <individual name="tail">
+    <one-of>
+      <item>LED lights use a smaller amount of energy and last longer than traditional tail lights. Halogen lights are the most common type of light and come standard on most vehicles. Xenon lights are a third type of tail light that are strong, bright, and higher intensity than other lights. These lights use an electrical arc compared to a filament.</item>
+    </one-of>
+  </individual>
+
+  <question speaker="user" predicate="troubleshooting1" type="wh_question">
+    <one-of>
+      <item> The light doesn't work. Any suggestions?</item>
+    </one-of>
+  </question>
+
+  <individual name="troubleshooting_msg1">
+    <one-of>
+      <item> The likely cause is a fuse, headlight relay, headlight switch, dimmer switch or a wiring fault. About the only cause that is an easy fix is a blown fuse. Consult your owners manual to locate the main fuse for the headlight circuit and replace that fuse with one having the same amp rating.</item>
+    </one-of>
+  </individual>
+
+  <question speaker="user" predicate="troubleshooting2" type="wh_question">
+    <one-of>
+      <item> Okay. I checked that. Still doesn't work. What should I do?</item>
+    </one-of>
+  </question>
+
+  
+  
+  <individual name="troubleshooting_msg2">
+    <one-of>
+      <item>If that did not cure the problem, then it is time to make an appointment with your favorite mechanic for some expert help.</item>
+    </one-of>
+  </individual>
+</grammar>

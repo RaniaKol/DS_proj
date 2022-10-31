@@ -1,0 +1,176 @@
+[
+    {
+        "semantic_expression": "request(open_engine_d)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "how to open the hood"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/5/50/Open-the-Hood-of-a-Vehicle-Step-7-Version-3.jpg/aid10255-v4-728px-Open-the-Hood-of-a-Vehicle-Step-7-Version-3.jpg"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(open_trunk)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Open the trunk"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/1/12/Replace-Tail-Light-Bulbs-Step-1.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-1.jpg"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(move_fabric)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Moving the fabric"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/8/89/Replace-Tail-Light-Bulbs-Step-2.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-2.jpg"
+            }
+        ]
+    },
+    {
+        "semantic_expression": "request(move_fabric_d)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Moving the fabric"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/8/89/Replace-Tail-Light-Bulbs-Step-2.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-2.jpg"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(pull_out)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "pull out the light"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/3/3c/Replace-Tail-Light-Bulbs-Step-3.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-3.jpg"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(pull_out_d)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "pull out the light"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/3/3c/Replace-Tail-Light-Bulbs-Step-3.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-3.jpg"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(grab_b)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Grab the socket"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/3/3e/Replace-Tail-Light-Bulbs-Step-4.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-4.jpg.webp"
+            }
+        ]
+    },
+    {
+        "semantic_expression": "request(grab_b_d)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Grab the socket"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/3/3e/Replace-Tail-Light-Bulbs-Step-4.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-4.jpg.webp"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(press_down)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Press the bulb in the socket"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/d/d0/Replace-Tail-Light-Bulbs-Step-5.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-5.jpg.webp"
+            }
+        ]
+    },
+    {
+        "semantic_expression": "request(press_down_d)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Press the bulb in the socket"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.wikihow.com/images/thumb/d/d0/Replace-Tail-Light-Bulbs-Step-5.jpg/aid11645515-v4-728px-Replace-Tail-Light-Bulbs-Step-5.jpg.webp"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(bulb_finished)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Ready to go!"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://i.pinimg.com/originals/b5/6c/22/b56c2264f71d0e5c72c6efe2752c783a.gif"
+            }
+        ]
+    }
+
+    
+]

@@ -1,0 +1,181 @@
+[
+    
+    {
+        "match": "greet",
+        "utterance": "Welcome to your car assistance! "
+    },
+
+    {
+        "match":"ask(?set([goal(perform(fix_front_bulb)), goal(perform(fix_back_bulb))]))",
+        "utterance": "How can I help you?"
+    },
+    
+    
+    {
+        "match": "request(power_off1)",
+        "utterance": " To ensure your safety, turn off your car and take the keys out of the ignition."
+    },
+
+    {
+        "match": "request(open_engine)",
+        "utterance": "Open the engine compartment. Pop your car's hood and locate the headlight holder near the front of the car."
+    },
+
+    {
+        "match": "request(disconnect_wires)",
+        "utterance": "Disconnect the headlight bulb power wires."
+    },
+
+    {
+        "match": "request(unscrew_old)",
+        "utterance": "Unscrew the old headlight."
+    },
+
+    {
+        "match": "request(screw_new)",
+        "utterance": "Gently screw in the new bulb without touching the glass of the bulb; oil and dirt on your hands can cause the bulb to burst once it heats up"
+    },
+
+    {
+        "match": "request(close_comp)",
+        "utterance": " Close the hood of your car. With the new bulb in place, your headlights should once again be as good as new."
+    },
+
+    {
+        "match": "request(open_engine_d)",
+        "utterance": "Look for the interior release latch under the steering wheel, low down near the driver's door, or in the corner of the glove box. This often has a picture of a car with an open hood.Some older cars only have an exterior release. Look for a latch under the front lip of the hood."
+    },
+
+    {
+        "match": "request(disconnect_wires_d)",
+        "utterance": "There are usually three wires attached to the base of the lightbulb. Push down the clip or cap holding them in place."
+    },
+
+    {
+        "match": "request(unscrew_old_d)",
+        "utterance": " You have to see how it is hooked up, gently take it apart and then you have to reverse the procedure going back together without putting your fingers on the glass of the bulb."
+    },
+
+    {
+        "match": "request(power_off2)",
+        "utterance": " To ensure your safety, turn off your car and take the keys out of the ignition."
+    },
+
+    
+    {
+        "match": "request(open_trunk)",
+        "utterance": "Open the trunk or tailgate of your vehicle"
+    },
+
+    {
+        "match": "request(move_fabric)",
+        "utterance": "Move the fabric liner or panel covering the backside of the tail light."
+    },
+
+    {
+        "match": "request(pull_out)",
+        "utterance": "Pull out the entire light assembly if you can not access the backside."
+    },
+
+    {
+        "match": "request(grab_b)",
+        "utterance": "Grab the back of the light socket, turn it to the left, and slide it out."
+    },
+
+    {
+        "match": "request(press_down)",
+        "utterance": "Press down on the bulb in the socket and then slide it out"
+    },
+
+    {
+        "match": "request(close_trunk)",
+        "utterance": " Close the trunk of your car. With the new bulb in place, your tail lights should once again be as good as new."
+    },
+
+    {
+        "match": "request(open_trunk_d)",
+        "utterance": "Pull the trunk release button from the drivers side of the vehicle to pop it open or pull the handle on your tailgate to drop it down so you can access the backside of your tail light assembly"
+    },
+
+    {
+        "match": "request(move_fabric_d)",
+        "utterance": "With your trunk open or your tailgate down, look inside your vehicle for a sturdy fabric liner or a plastic panel covering the backside of your tail light. Find the edge where the fabric or panel meets the plastic trim of your vehicle and use your hands to pull back the fabric or remove the panel to expose the backside of your tail light"
+    },
+
+    {
+        "match": "request(pull_out_d)",
+        "utterance": "If your vehicle does not have a fabric liner or panel that allows you to access the backside of your tail light, look for bolts or screws on the side of the lens covering the tail light. Use a screwdriver to remove the screws or a wrench to remove the bolts and gently slide out the whole light assembly so you don’t disconnect the wires attached to the backside of it."
+    },
+
+    {
+        "match": "request(grab_b_d)",
+        "utterance": "On the backside of the tail light assembly you will see the back of the light socket with wires connected to it. Locate the socket holding the burned-out bulb and grip the rear of it. Rotate the socket to the left and pull it out of the backside of the light."
+    },
+
+    {
+        "match": "request(press_down_d)",
+        "utterance": "Gently grip the bulb by the metal part of the plug and depress it slightly into the socket to release it. Then, slide it out of the light socket."
+    },
+
+
+
+    {
+        "match": "report(action_status(power_off, done))",
+        "utterance": "Great!"
+    },
+
+    {
+        "match": "report(action_status(open_engine, done))",
+        "utterance": "Okay"
+    },
+
+    {
+        "match": "report(action_status(disconnect_wires, done))",
+        "utterance": "Good!"
+    },
+
+    {
+        "match": "report(action_status(unscrew_old, done))",
+        "utterance": "perfect!"
+    },
+
+    {
+        "match": "report(action_status(screw_new, done))",
+        "utterance": "Okay!"
+    },
+
+    {
+        "match": "report(action_status(close_comp, done))",
+        "utterance": "Great!"
+    },
+
+    {
+        "match": "report(action_status(open_trunk, done))",
+        "utterance": "Great."
+    },
+
+    {
+        "match": "report(action_status(move_fabric, done))",
+        "utterance": "Okey!"
+    },
+
+    {
+        "match": "report(action_status(pull_out, done))",
+        "utterance": "perfect!"
+    },
+
+    {
+        "match": "report(action_status(grab_b, done))",
+        "utterance": "awsome!"
+    },
+
+    {
+        "match": "report(action_status(press_down, done))",
+        "utterance": "perfect!"
+    },
+
+    {
+        "match": "report(action_status(close_trunk, done))",
+        "utterance": "awsome!"
+    }
+]

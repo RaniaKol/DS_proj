@@ -1,0 +1,494 @@
+language: "en"
+pipeline:
+  - name: WhitespaceTokenizer
+    case_sensitive: False
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
+    model_weights: "bert-base-uncased"
+    cache_dir: lfs
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+#  - name: DucklingEntityExtractor
+#    url: "http://duckling:8000"
+#    dimensions: []  # Add dimensions if the DDD has built-in the sorts integer or datetime e.g. ["number", "time"]
+  - name: EntitySynonymMapper
+
+version: "2.0"
+
+nlu:
+- intent: action::close_comp
+  examples: |
+    - close the hood
+    - close compartment
+
+- intent: action::close_trunk
+  examples: |
+    - close trunk
+    - close the trunk
+
+- intent: action::disconnect_wires
+  examples: |
+    - disconnect wires
+    - disconnect three wires
+
+- intent: action::disconnect_wires_d
+  examples: |
+    - disconnect wires
+    - disconnect three wires
+
+- intent: action::fix_back_bulb
+  examples: |
+    - tail light bulb
+    - I want to fix the tail light bulb
+    - Tell me how to fix the tail light bulb
+    - How can I fix the tail light bulb
+    - I want to change the tail light bulb
+    - Tell me how to change the tail light bulb
+    - How can I change the tail light bulb
+    - I want to replace the tail light bulb
+    - Tell me how to replace the tail light bulb
+    - How can I replace the tail light bulb
+
+- intent: action::fix_front_bulb
+  examples: |
+    - front bulb
+    - I want to fix the front bulb
+    - Tell me how to fix the front bulb
+    - How can I fix the front bulb
+    - I want to change the front bulb
+    - Tell me how to change the front bulb
+    - How can I change the front bulb
+    - I want to replace the front bulb
+    - Tell me how to replace the front bulb
+    - How can I replace the front bulb
+    - headlight bulb
+    - I want to fix the headlight bulb
+    - Tell me how to fix the headlight bulb
+    - How can I fix the headlight bulb
+    - I want to change the headlight bulb
+    - Tell me how to change the headlight bulb
+    - How can I change the headlight bulb
+    - I want to replace the headlight bulb
+    - Tell me how to replace the headlight bulb
+    - How can I replace the headlight bulb
+    - car headlight bulb
+    - I want to fix the car headlight bulb
+    - Tell me how to fix the car headlight bulb
+    - How can I fix the car headlight bulb
+    - I want to change the car headlight bulb
+    - Tell me how to change the car headlight bulb
+    - How can I change the car headlight bulb
+    - I want to replace the car headlight bulb
+    - Tell me how to replace the car headlight bulb
+    - How can I replace the car headlight bulb
+
+- intent: action::grab_b
+  examples: |
+    - grab the socket
+    - socket
+    - socket of the light
+
+- intent: action::grab_b_d
+  examples: |
+    - grab the socket
+    - socket
+    - socket of the light
+
+- intent: action::move_fabric
+  examples: |
+    - move the fabric
+    - move fabric
+    - fabric
+
+- intent: action::move_fabric_d
+  examples: |
+    - move the fabric
+    - move fabric
+    - fabric
+
+- intent: action::open_engine
+  examples: |
+    - open the hood
+    - open the engine
+    - open the compartment
+
+- intent: action::open_engine_d
+  examples: |
+    - open the hood
+    - open the engine
+    - open the compartment
+
+- intent: action::open_trunk
+  examples: |
+    - open the trunk
+    - open trunk
+    - trunk
+
+- intent: action::open_trunk_d
+  examples: |
+    - open the trunk
+    - open trunk
+    - trunk
+
+- intent: action::power_off
+  examples: |
+    - power off
+    - power off the engine
+    - power off the car engine
+
+- intent: action::press_down
+  examples: |
+    - press down the bulb
+    - press down the bulb in the socket
+
+- intent: action::press_down_d
+  examples: |
+    - press down the bulb
+    - press down the bulb in the socket
+
+- intent: action::pull_out
+  examples: |
+    - pull out the light
+    - pull out the light
+
+- intent: action::pull_out_d
+  examples: |
+    - pull out the light
+    - pull out the light
+
+- intent: action::screw_new
+  examples: |
+    - screw new bulb
+    - new bulb
+
+- intent: action::unscrew_old
+  examples: |
+    - unscrew old bulb
+    - old bulb
+
+- intent: action::unscrew_old_d
+  examples: |
+    - unscrew old bulb
+    - old bulb
+
+- intent: question::clean_h
+  examples: |
+    - how can I clean the headlights?
+    - tell me how to open the headlights
+    - can you tell me how to clean the headlights?
+    - I want to know how to clean the headlights
+
+- intent: question::adjust_h
+  examples: |
+    - how can I adjust the headlights ?
+    - tell me how to adjust the headlights?
+    - can you tell me how to adjust the headlights ?
+    - I want to know how to adjust the headlights
+
+- intent: question::bulb_types
+  examples: |
+    - how many types of headlight are there?
+    - tell me how to many types of headlights exist
+    - I want to know the types of the headlights
+    - can you tell me the types of the headlights
+
+- intent: question::best_type
+  examples: |
+    - which is the best type of headlight?
+    - tell me which is the best type of headlight
+    - can you tell me the best type of headlight?
+    - I want to know the best type of headlight
+
+- intent: question::number_of_t
+  examples: |
+    - how many bulbs are in the tail light?
+    - tell me how many bulbs are in the tail light
+    - can you tell me how many bulbs are in the tail light??
+
+- intent: question::types_of_t
+  examples: |
+    - how many types of tail lights exist?
+    - tell me how many tail lights exist.
+    - can you tell me how many tail lights exist?
+    - I want to know how many tail lights exist
+
+- intent: question::troubleshooting1
+  examples: |
+    - The light doesn't work. Any suggestions?
+
+- intent: question::troubleshooting2
+  examples: |
+    - Okay. I checked that. Still doesn't work. What should I do?
+
+- intent: answer
+  examples: |
+    - [The likely cause is a fuse, headlight relay, headlight switch, dimmer switch or a wiring fault. About the only cause that is an easy fix is a blown fuse. Consult your owners manual to locate the main fuse for the headlight circuit and replace that fuse with one having the same amp rating.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg1"}
+    - [If that did not cure the problem, then it is time to make an appointment with your favorite mechanic for some expert help.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg2"}
+    - [One of the most known techniques to clean headlights is toothpaste.First, you have to clean the headlights with a window or headlights cleaner. Then, apply a fingertip of toothpaste to a soft cloth. Toothpaste with baking soda works better than regular toothpaste. Start rubbing in circles and make sure to keep the surface wet.After removing the foggy layer, remember to apply a sealant.]{"entity": "sort.question_", "value": "individual.clean"}
+    - [as you stand in the front of the car, have the assistant turn the headlights off. Next, put the dark cloth or cardboard over one headlight, and have the assistant turn the headlights on. Find the adjusting screw and turn the screws slowly clockwise to raise the height of the lights or counterclockwise to lower them]{"entity": "sort.question_", "value": "individual.adjust"}
+    - [There are three main types of headlights: LED, HID or xenon, and halogen.]{"entity": "sort.question_", "value": "individual.types"}
+    - [It depends on your needs. If you do a lot of night driving on country roads, HID headlights are going to be the brightest for you. If you are sticking to a budget, halogen lights are going to be the most cost effective option. LED lights may interest anyone looking to lower their emissions without sacrificing on brightness.]{"entity": "sort.question_", "value": "individual.best"}
+    - [On many vehicles, the tail lights and brake lights share the same bulb. One filament inside the bulb is for the tail light and the other filament is for the brake light. There are also some vehicles that have a separate bulb for each circuit]{"entity": "sort.question_", "value": "individual.number"}
+    - [LED lights use a smaller amount of energy and last longer than traditional tail lights. Halogen lights are the most common type of light and come standard on most vehicles. Xenon lights are a third type of tail light that are strong, bright, and higher intensity than other lights. These lights use an electrical arc compared to a filament.]{"entity": "sort.question_", "value": "individual.tail"}
+    - [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished"}
+    - yes [The likely cause is a fuse, headlight relay, headlight switch, dimmer switch or a wiring fault. About the only cause that is an easy fix is a blown fuse. Consult your owners manual to locate the main fuse for the headlight circuit and replace that fuse with one having the same amp rating.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg1"}
+    - no [If that did not cure the problem, then it is time to make an appointment with your favorite mechanic for some expert help.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg2"}
+
+- intent: answer_negation
+  examples: |
+    - not [The likely cause is a fuse, headlight relay, headlight switch, dimmer switch or a wiring fault. About the only cause that is an easy fix is a blown fuse. Consult your owners manual to locate the main fuse for the headlight circuit and replace that fuse with one having the same amp rating.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg1"}
+    - not [If that did not cure the problem, then it is time to make an appointment with your favorite mechanic for some expert help.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg2"}
+    - not [One of the most known techniques to clean headlights is toothpaste.First, you have to clean the headlights with a window or headlights cleaner. Then, apply a fingertip of toothpaste to a soft cloth. Toothpaste with baking soda works better than regular toothpaste. Start rubbing in circles and make sure to keep the surface wet.After removing the foggy layer, remember to apply a sealant.]{"entity": "sort.question_", "value": "individual.clean"}
+    - not [as you stand in the front of the car, have the assistant turn the headlights off. Next, put the dark cloth or cardboard over one headlight, and have the assistant turn the headlights on. Find the adjusting screw and turn the screws slowly clockwise to raise the height of the lights or counterclockwise to lower them]{"entity": "sort.question_", "value": "individual.adjust"}
+    - not [There are three main types of headlights: LED, HID or xenon, and halogen.]{"entity": "sort.question_", "value": "individual.types"}
+    - not [It depends on your needs. If you do a lot of night driving on country roads, HID headlights are going to be the brightest for you. If you are sticking to a budget, halogen lights are going to be the most cost effective option. LED lights may interest anyone looking to lower their emissions without sacrificing on brightness.]{"entity": "sort.question_", "value": "individual.best"}
+    - not [On many vehicles, the tail lights and brake lights share the same bulb. One filament inside the bulb is for the tail light and the other filament is for the brake light. There are also some vehicles that have a separate bulb for each circuit]{"entity": "sort.question_", "value": "individual.number"}
+    - not [LED lights use a smaller amount of energy and last longer than traditional tail lights. Halogen lights are the most common type of light and come standard on most vehicles. Xenon lights are a third type of tail light that are strong, bright, and higher intensity than other lights. These lights use an electrical arc compared to a filament.]{"entity": "sort.question_", "value": "individual.tail"}
+    - not [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished"}
+
+- intent: NEGATIVE
+  examples: |
+    - aboard
+    - about
+    - above
+    - across
+    - after
+    - against
+    - along
+    - among
+    - as
+    - at
+    - on
+    - atop
+    - before
+    - behind
+    - below
+    - beneath
+    - beside
+    - between
+    - beyond
+    - but
+    - by
+    - come
+    - down
+    - during
+    - except
+    - for
+    - from
+    - in
+    - inside
+    - into
+    - less
+    - like
+    - near
+    - of
+    - off
+    - on
+    - onto
+    - opposite
+    - out
+    - outside
+    - over
+    - past
+    - save
+    - short
+    - since
+    - than
+    - then
+    - through
+    - throughout
+    - to
+    - toward
+    - under
+    - underneath
+    - unlike
+    - until
+    - up
+    - upon
+    - with
+    - within
+    - without
+    - worth
+    - is
+    - it
+    - the
+    - a
+    - am
+    - are
+    - them
+    - this
+    - that
+    - I
+    - you
+    - he
+    - she
+    - they
+    - them
+    - his
+    - her
+    - my
+    - mine
+    - their
+    - your
+    - us
+    - our
+    - how
+    - how's
+    - how is
+    - how's the
+    - how is the
+    - when
+    - when's
+    - when is
+    - when is the
+    - when's the
+    - what
+    - what is
+    - what's
+    - what's the
+    - what is the
+    - why
+    - why is
+    - why's
+    - why is the
+    - why's the
+    - do
+    - make
+    - tell
+    - start
+    - stop
+    - enable
+    - disable
+    - raise
+    - lower
+    - decrease
+    - increase
+    - act
+    - determine
+    - say
+    - ask
+    - go
+    - shoot
+    - wait
+    - hang on
+    - ok
+    - show
+    - help
+
+- intent: answer:yes
+  examples: |
+    - yes
+    - yeah
+    - yep
+    - sure
+    - ok
+    - of course
+    - very well
+    - fine
+    - right
+    - excellent
+    - okay
+    - perfect
+    - I think so
+
+- intent: answer:no
+  examples: |
+    - no
+    - nope
+    - no thanks
+    - no thank you
+    - negative
+    - don't want to
+    - don't
+    - do not
+    - please don't
+
+- intent: request:top
+  examples: |
+    - forget it
+    - never mind
+    - get me out of here
+    - start over
+    - beginning
+    - never mind that
+    - restart
+
+- intent: request:up
+  examples: |
+    - go back
+    - back
+    - previous
+    - back to the previous
+    - go to the previous
+    - go back to the previous one
+
+- intent: request:how
+  examples: |
+    - how do I do that
+    - how
+    - can you tell me how to do that
+    - I don't know how should I do that
+    - how can I do that
+
+- intent: report:done
+  examples: |
+    - I'm done
+    - done
+    - ready
+    - it's ready
+    - I'm ready
+    - completed
+    - check
+    - I have finished
+    - finished
+    - done and done
+    - it's done now
+    - okay next
+    - next
+    - next instruction
+
+- intent: icm:per*neg
+  examples: |
+    - repeat
+    - repeat it
+    - repeat that
+    - pardon
+    - sorry
+    - can you repeat that
+    - excuse me
+    - what was that
+    - what did you say
+    - come again
+
+- intent: icm:acc*neg:issue
+  examples: |
+    - I don't know
+    - I don't know that
+    - it doesn't matter
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thank you very much
+    - thanks
+    - big thanks
+    - thanks a lot
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - good day
+    - what's up
+    - good evening
+    - good morning
+    - hey
+
+

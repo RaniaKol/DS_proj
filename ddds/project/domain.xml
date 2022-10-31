@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="ProjectDomain" is_super_domain="true">
+  
+<goal type="perform" action="top">
+  <plan>
+    <findout type="alt_question">
+      <alt>
+        <perform action="fix_front_bulb"/>
+      </alt>
+      <alt>
+        <perform action="fix_back_bulb"/>
+      </alt>
+    </findout>
+  </plan>
+</goal>
+
+  <goal type="perform" action="fix_front_bulb">
+    <plan>
+      <get_done action="power_off1"/>
+      <get_done action="open_engine"/>
+      <get_done action="disconnect_wires"/>
+      <get_done action="unscrew_old"/>
+      <get_done action="screw_new"/>
+      <get_done action="close_comp"/>
+      
+      <inform>
+        <proposition predicate="finished1" value="bulb_finished1"/>
+      </inform>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  
+  <goal type="perform" action="open_engine">
+    <plan>
+      <get_done action="open_engine_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="disconnect_wires">
+    <plan>
+      <get_done action="disconnect_wires_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="unscrew_old">
+    <plan>
+      <get_done action="unscrew_old_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+  
+  <goal type="perform" action="fix_back_bulb">
+    <plan>
+      <get_done action="power_off2"/>
+      <get_done action="open_trunk"/>
+      <get_done action="move_fabric"/>
+      <get_done action="pull_out"/>
+      <get_done action="grab_b"/>
+      <get_done action="press_down"/>
+      <get_done action="close_trunk"/>
+     
+      <inform>
+        <proposition predicate="finished2" value="bulb_finished2"/>
+      </inform>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  
+  <goal type="perform" action="open_trunk">
+    <plan>
+      <get_done action="open_trunk_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+  
+  <goal type="perform" action="move_fabric">
+    <plan>
+      <get_done action="move_fabric_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="pull_out">
+    <plan>
+      <get_done action="pull_out_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="grab_b">
+    <plan>
+      <get_done action="grab_b_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+  <goal type="perform" action="press_down">
+    <plan>
+      <get_done action="press_down_d"/>
+      <signal_action_completion/>
+    </plan>
+  </goal>
+
+
+
+  <goal type="resolve" question_type="wh_question" predicate="clean_h">
+    <plan>
+      <inform>
+        <proposition predicate="clean_h" value="clean"/>
+      </inform>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="adjust_h">
+    <plan>
+      <inform>
+        <proposition predicate="adjust_h" value="adjust"/>
+      </inform>
+    </plan>
+  </goal>
+
+
+  <goal type="resolve" question_type="wh_question" predicate="bulb_types">
+    <plan>
+      <inform>
+        <proposition predicate="bulb_types" value="types"/>
+      </inform>
+    </plan>
+  </goal>
+
+
+  <goal type="resolve" question_type="wh_question" predicate="best_type">
+    <plan>
+      <inform>
+        <proposition predicate="best_type" value="best"/>
+      </inform>
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="number_of_t">
+    <plan>
+      <inform>
+        <proposition predicate="number_of_t" value="number"/>
+      </inform>
+    </plan>
+  </goal>
+
+   <goal type="resolve" question_type="wh_question" predicate="types_of_t">
+    <plan>
+      <inform>
+        <proposition predicate="types_of_t" value="tail"/>
+      </inform>
+    </plan>
+  </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="troubleshooting1">
+    <plan>
+      <inform>
+        <proposition predicate="troubleshooting1" value="troubleshooting_msg1"/>
+      </inform>
+    </plan>
+  </goal>
+
+ <goal type="resolve" question_type="wh_question" predicate="troubleshooting2">
+    <plan>
+      <inform>
+        <proposition predicate="troubleshooting2" value="troubleshooting_msg2"/>
+      </inform>
+    </plan>
+  </goal>
+</domain>

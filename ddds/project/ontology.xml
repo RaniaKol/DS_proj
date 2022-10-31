@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="ProjectOntology">
+
+<sort name="ready" dynamic="false"/>
+<sort name="question_" dynamic="false" />
+
+<action name="fix_front_bulb"/>
+<action name="fix_back_bulb"/>
+
+<action name="power_off1"/>
+<action name="open_engine"/>
+<action name="disconnect_wires"/>
+<action name="unscrew_old"/>
+<action name="screw_new"/>
+<action name="close_comp"/>
+
+<action name="open_engine_d"/>
+<action name="disconnect_wires_d"/>
+<action name="unscrew_old_d"/>
+
+<action name="power_off2"/>
+<action name="open_trunk"/>
+<action name="move_fabric"/>
+<action name="pull_out"/>
+<action name="grab_b"/>
+<action name="press_down"/>
+<action name="close_trunk"/>
+
+<action name="open_trunk_d"/>
+<action name="move_fabric_d"/>
+<action name="pull_out_d"/>
+<action name="grab_b_d"/>
+<action name="press_down_d"/>
+
+<predicate name="troubleshooting1" sort="question_"/>
+<predicate name="troubleshooting2" sort="question_"/>
+<predicate name="clean_h" sort="question_"/>
+<predicate name="adjust_h" sort="question_"/>
+<predicate name="bulb_types" sort="question_"/>
+<predicate name="best_type" sort="question_"/>
+<predicate name="number_of_t" sort="question_"/>
+<predicate name="types_of_t" sort="question_"/>
+<predicate name="finished1" sort="ready"/>
+<predicate name="finished2" sort="ready"/>
+
+<individual name="bulb_finished1" sort="ready"/>
+<individual name="bulb_finished2" sort="ready"/>
+<individual name="troubleshooting_msg1" sort="question_"/>
+<individual name="troubleshooting_msg2" sort="question_"/>
+<individual name="clean" sort="question_"/>
+<individual name="adjust" sort="question_"/>
+<individual name="types" sort="question_"/>
+<individual name="best" sort="question_"/>
+<individual name="number" sort="question_"/>
+<individual name="tail" sort="question_"/>
+
+</ontology>
