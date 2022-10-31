@@ -137,7 +137,13 @@ nlu:
     - open trunk
     - trunk
 
-- intent: action::power_off
+- intent: action::power_off1
+  examples: |
+    - power off
+    - power off the engine
+    - power off the car engine
+
+- intent: action::power_off2
   examples: |
     - power off
     - power off the engine
@@ -237,7 +243,8 @@ nlu:
     - [It depends on your needs. If you do a lot of night driving on country roads, HID headlights are going to be the brightest for you. If you are sticking to a budget, halogen lights are going to be the most cost effective option. LED lights may interest anyone looking to lower their emissions without sacrificing on brightness.]{"entity": "sort.question_", "value": "individual.best"}
     - [On many vehicles, the tail lights and brake lights share the same bulb. One filament inside the bulb is for the tail light and the other filament is for the brake light. There are also some vehicles that have a separate bulb for each circuit]{"entity": "sort.question_", "value": "individual.number"}
     - [LED lights use a smaller amount of energy and last longer than traditional tail lights. Halogen lights are the most common type of light and come standard on most vehicles. Xenon lights are a third type of tail light that are strong, bright, and higher intensity than other lights. These lights use an electrical arc compared to a filament.]{"entity": "sort.question_", "value": "individual.tail"}
-    - [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished"}
+    - [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished1"}
+    - [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished2"}
     - yes [The likely cause is a fuse, headlight relay, headlight switch, dimmer switch or a wiring fault. About the only cause that is an easy fix is a blown fuse. Consult your owners manual to locate the main fuse for the headlight circuit and replace that fuse with one having the same amp rating.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg1"}
     - no [If that did not cure the problem, then it is time to make an appointment with your favorite mechanic for some expert help.]{"entity": "sort.question_", "value": "individual.troubleshooting_msg2"}
 
@@ -251,7 +258,8 @@ nlu:
     - not [It depends on your needs. If you do a lot of night driving on country roads, HID headlights are going to be the brightest for you. If you are sticking to a budget, halogen lights are going to be the most cost effective option. LED lights may interest anyone looking to lower their emissions without sacrificing on brightness.]{"entity": "sort.question_", "value": "individual.best"}
     - not [On many vehicles, the tail lights and brake lights share the same bulb. One filament inside the bulb is for the tail light and the other filament is for the brake light. There are also some vehicles that have a separate bulb for each circuit]{"entity": "sort.question_", "value": "individual.number"}
     - not [LED lights use a smaller amount of energy and last longer than traditional tail lights. Halogen lights are the most common type of light and come standard on most vehicles. Xenon lights are a third type of tail light that are strong, bright, and higher intensity than other lights. These lights use an electrical arc compared to a filament.]{"entity": "sort.question_", "value": "individual.tail"}
-    - not [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished"}
+    - not [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished1"}
+    - not [Great! You can once again enjoy driving your car day or night!]{"entity": "sort.ready", "value": "individual.bulb_finished2"}
 
 - intent: NEGATIVE
   examples: |

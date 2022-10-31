@@ -157,7 +157,23 @@
     },
 
     {
-        "semantic_expression": "request(bulb_finished)",
+        "semantic_expression": "request(bulb_finished1)",
+        "visual_information": [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Ready to go!"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://i.pinimg.com/originals/b5/6c/22/b56c2264f71d0e5c72c6efe2752c783a.gif"
+            }
+        ]
+    },
+
+    {
+        "semantic_expression": "request(bulb_finished2)",
         "visual_information": [
             {
                 "attribute": "name",
