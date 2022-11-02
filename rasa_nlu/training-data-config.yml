@@ -444,6 +444,10 @@ nlu:
     - can you tell me how to do that
     - I don't know how should I do that
     - how can I do that
+    - give me more details
+    - give me details
+    - give me more information
+    - more information
 
 - intent: report:done
   examples: |
@@ -461,6 +465,8 @@ nlu:
     - okay next
     - next
     - next instruction
+    - Ok
+    - yes
 
 - intent: icm:per*neg
   examples: |
@@ -474,6 +480,7 @@ nlu:
     - what was that
     - what did you say
     - come again
+    - what
 
 - intent: icm:acc*neg:issue
   examples: |

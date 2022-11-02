@@ -1,8 +1,7 @@
 [
-    
     {
         "match": "greet",
-        "utterance": "Welcome to your car assistance! "
+        "utterance": "Welcome! I am your car assistant!"
     },
 
     {
