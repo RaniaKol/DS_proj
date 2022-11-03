@@ -374,13 +374,11 @@ nlu:
     - yeah
     - yep
     - sure
-    - ok
     - of course
     - very well
     - fine
     - right
     - excellent
-    - okay
     - perfect
     - I think so
 
@@ -443,8 +441,8 @@ nlu:
     - okay next
     - next
     - next instruction
-    - ok
-    - yes
+    - okay
+    - yeah
 
 - intent: icm:per*neg
   examples: |
